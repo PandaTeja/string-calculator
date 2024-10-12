@@ -11,3 +11,7 @@ test('should return the number for a single number string', () => {
 test('should return the sum of two numbers', () => {
     expect(add("1,2")).toEqual(3);
 });
+
+test('should return the sum of multiple numbers', () => {
+    expect(add("1,2,3")).toEqual(6);
+});
