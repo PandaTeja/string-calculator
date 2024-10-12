@@ -19,3 +19,7 @@ test('should return the sum of multiple numbers', () => {
 test('should handle new lines between numbers', () => {
     expect(add("1\n2,3")).toEqual(6);
 });
+
+it('should support different delimiters', () => {
+    expect(add("//;\n1;2")).toEqual(3);
+});
